@@ -71,31 +71,37 @@ const Collection = () => {
            
             </View>
         
-            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', backgroundColor: '#000000' }}>
-                <View style={{ marginLeft: width(2) }}>
-                    <Text style={{ color: '#ffffff', fontWeight: '500', fontSize: totalSize(1.5) }} >Impressum</Text>
-                    <Text style={{ color: '#ffffff', fontSize: totalSize(1.5), fontWeight: '500', marginTop: height(1) }} >Datenschutz</Text>
-                </View>
-
-                <Text style={{ color: '#ffffff', fontSize: totalSize(2), fontWeight: 'bold' }} >Metashooters</Text>
-                <View style={{ marginRight: width(2) }}>
-                    <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-
-                        <Text style={{ color: '#ffffff', fontWeight: '500', fontSize: totalSize(1.5), marginLeft: width(1) }} >Instagram</Text>
-                    </View>
-                    <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: height(1) }}>
-                        <Text style={{ color: '#ffffff', fontWeight: '500', fontSize: totalSize(1.5), marginLeft: width(3) }} >Twitter</Text>
-                    </View>
-                </View>
-            </View>
             <LinearGradient
-                colors={['#000000', '#FF00C7']}
-            >
-                <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginHorizontal: width(5) }}>
-                    <Text style={{ color: '#ffffff', fontWeight: '500', fontSize: totalSize(1.5), marginTop: height(2), marginBottom: height(2) }} >AGB</Text>
-                    <Text style={{ color: '#ffffff', fontWeight: '500', fontSize: totalSize(1.5), marginTop: height(2), marginBottom: height(2) }} >TicTok</Text>
+          colors={['#000000','#FF00C7']}
+          locations={[0.5,1]}
+          >
+          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',marginBottom:height(1) }}>
+            <View style={{marginLeft:width(2)}}>
+              <Text style={{ color: '#ffffff', fontWeight: '500', fontSize: totalSize(1.5) }} >Impressum</Text>
+              <Text style={{ color: '#ffffff', fontSize: totalSize(1.5), fontWeight: '500', marginTop: height(1) }} >Datenschutz</Text>
+              <Text style={{ color: '#ffffff', fontWeight: '500', fontSize: totalSize(1.5), marginTop: height(1) }} >AGB</Text>
+         
+              </View>
+              
+            <Text style={{ color: '#ffffff', fontSize: totalSize(2), fontWeight: 'bold' }} >Metashooters</Text>
+            <View style={{marginRight:width(2)}}>
+              <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+              <Image  source={Instagram} style={{height:height(2),width:width(4)}}/>
+                <Text style={{ color: '#ffffff', fontWeight: '500', fontSize: totalSize(1.5), marginLeft: width(1) }} >Instagram</Text>
+              </View>
+              <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: height(1) }}>
+        
+            <Image  source={Twitter} style={{height:height(2),width:width(4)}}
+            />
+                <Text style={{ color: '#ffffff', fontWeight: '500', fontSize: totalSize(1.5), marginLeft: width(3) }} >Twitter</Text> 
                 </View>
-            </LinearGradient>
+                <View style={{flexDirection:'row',alignItems:'center'}}>
+                <Image  source={Tiktok} style={{height:height(2),width:width(4)}}/>
+                <Text style={{ color: '#ffffff', fontWeight: '500',fontSize: totalSize(1.5) , marginTop: height(1),marginLeft:width(3) }} >TicTok</Text>
+                </View>
+              </View>
+              </View>
+          </LinearGradient>
 
         </ScrollView>
     )
